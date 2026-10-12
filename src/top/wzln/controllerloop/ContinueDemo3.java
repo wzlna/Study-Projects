@@ -23,7 +23,7 @@ public class ContinueDemo3 {
         Scanner sc = new Scanner(System.in);
         int n;
 
-        //用循环判断输入的数据是否符合要求
+        // 2.用循环判断输入的数据是否符合要求
         while (true) {
             n = sc.nextInt();
 
@@ -44,6 +44,7 @@ public class ContinueDemo3 {
             temp = i;
             while (temp > 0) { // 不断循环取出最低位 并去掉一位 直到temp不再大于0(或没位数等于0了)
                 zuidi = temp % 10; //取出最低位
+
                 if (zuidi == 4) {
                     hasfour = true;
                 }
