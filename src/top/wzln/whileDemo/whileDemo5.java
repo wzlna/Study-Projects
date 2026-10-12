@@ -34,7 +34,7 @@ public class whileDemo5 {
         } else {  // n小于0的逻辑
 
             n = -n; //取绝对值
-            for (int i = 0; i < (n_length - 1); i++) {  //n_length要去掉负号
+            for (int i = 0; i < (n_length - 1); i++) {  //n_length要去掉负号 所以减1
                 int a = n % 10; //取最后一位
                 result = a + result;
                 n = n / 10; // 去掉一位

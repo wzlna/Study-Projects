@@ -10,7 +10,6 @@ package top.wzln.dowhileDemo;
 public class dowhileDemo {
     static void main(String[] args) {
 
-
         // dowhile方法
         int i = 0;
         do{
