@@ -1,5 +1,7 @@
 package top.wzln.looploop11;
-
+/*
+    分块打印平行四边形
+ */
 public class Test6 {
     static void main() {
 

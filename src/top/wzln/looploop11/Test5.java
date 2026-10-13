@@ -22,7 +22,7 @@ public class Test5 {
 
 
             //内循环 控制每一行打印多少个*
-            for (int a = 1; a <= i*2+1; a++) {  // 每行固定打印7个星号，作为平行四边形的每一条边
+            for (int a = 1; a <= i*2+1; a++) {
                 System.out.print("*");
             }
 

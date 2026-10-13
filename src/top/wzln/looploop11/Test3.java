@@ -1,6 +1,6 @@
 package top.wzln.looploop11;
 /*
-    用嵌套循环打印倒三角形
+    用嵌套循环打印倒直角三角形
  */
 public class Test3 {
     static void main() {
