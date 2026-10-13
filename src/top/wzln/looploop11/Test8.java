@@ -16,7 +16,7 @@ package top.wzln.looploop11;
  */
 public class Test8 {
     static void main() {
-        // 1.先打印一个直角三角形
+        
         for (int i = 1; i <= 9; i++) {  //外循环:决定行数
 
             // 起点: int a = 1

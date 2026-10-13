@@ -36,7 +36,7 @@ public class Test3 {
         // 第3行（a=5）：i=1 → 打 1 个*
         for (int a = 1; a <= 5; a++) {  // 1 2 3 4 5
 
-            for (int i = a; i <= 5; i++) { // i小于等于5就一直打印 同时i++
+            for (int i = a; i <= 5; i++) { // i小于等于5就一直打印 最终形成一种递减
                 System.out.print("*");
             }
             System.out.println();  //然后换行
