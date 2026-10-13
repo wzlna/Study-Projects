@@ -26,7 +26,6 @@ public class Test6 {
                 System.out.print("#");              //        #
             }
 
-
             System.out.println();
         }
     }
