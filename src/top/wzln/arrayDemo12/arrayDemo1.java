@@ -8,11 +8,11 @@ package top.wzln.arrayDemo12;
  */
 public class arrayDemo1 {
     static void main() {
-        int[] year = {12,13,14};
+        int[] age = new int[]{12,13,14};  //数组定义完整语法
         double[] height = {1.9,1.8,1.7,1.6,1.5};
         String[] name = {"张三","李四","王五"};
 
-        System.out.println(year);
+        System.out.println(age);
         System.out.println(height);
         System.out.println(name);
     }
