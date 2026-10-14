@@ -32,7 +32,7 @@ public class Test7 {
                 // 起点: 从1开始(打印第一个 空格)
                 // 条件: a <= i - 4 (控制这一行总共打印多少个)
                 // 步进: a++
-                for (int a = 1; a <= i - 4; a++) {  // i等于几 就执行几次循环
+                for (int a = 1; a <= i - 4; a++) {
                     System.out.print(" ");
                 }
 
