@@ -1,4 +1,5 @@
 package top.wzln.arrayDemo12;
+
 /*
     数组的元素访问
         1.获取数据
@@ -7,7 +8,7 @@ package top.wzln.arrayDemo12;
 public class arrayDemo2 {
     static void main() {
         //1.利用静态初始化创建数组
-        int[] arr = {10,20,30,40,50,60};
+        int[] arr = {10, 20, 30, 40, 50, 60};
 
         // 2.获取数组中的元素
         // 索引:从0开始 连续➕1 中间不间断
