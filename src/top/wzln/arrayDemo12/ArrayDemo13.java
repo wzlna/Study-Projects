@@ -9,27 +9,24 @@ public class ArrayDemo13 {
     static void main() {
         int[] arr = {1, 1, 2, 2, 2, 2, 3, 3, 3, 3};  // 长度为10
 
-        // 1.定义两个指针
+        // 定义两个指针
         int slow = 0;
         int fast = 1;
 
-        // 2.利用循环不断的移动快慢指针，找不重复的元素
-        while (fast < arr.length) {  // 如果超过arr[9]就停止循环
-            // 判断两个指针指向的数据是否相同,相同仅自增fast,不相同就自增slow然后把fast赋值给slow,然后再自增fast
-            if (arr[slow] != arr[fast]) {
-                // 两个指针不相等,先把slow后移一位,然后快指针的数据存入慢指针位置 然后自增
-                slow++;
-                arr[slow] = arr[fast];
+        while(fast < 10){
+            if (arr[slow] == arr[fast]){
+                fast++;
+            }else{
+                slow++;  //slow前移一位用来存储不同的值
+                arr[slow] = arr[fast];  // 将不同的值赋值给位移后的slow
+                fast++;  //赋值完后 fast继续++ 查看下一个数(继续循环直到fast>9)
             }
-            fast++;  //无论相等还是不相等都会自增,不相等slow自增
         }
 
-        // 循环结束后 表示不重复的数据已将找到了
-        // 3.输出结果
-        for (int i = 0; i <= slow; i++) {  //需要小于等于
+        for (int i = 0; i <= slow; i++) {
             System.out.println(arr[i]);
         }
 
-    }
 
+    }
 }
