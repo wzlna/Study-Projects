@@ -1,4 +1,5 @@
 package top.wzln.arrayDemo12;
+
 /*
     给定一个整数数组nums和一个整数目标值target,请你在该数组中找出 和为目标值Target的那两个整数
     并输出他们的数组索引.
@@ -17,7 +18,7 @@ package top.wzln.arrayDemo12;
  */
 public class arrayDemo14 {
     static void main() {
-        int[] nums = {1,2,34,45,6,23,1,5,13};  // 9位
+        int[] nums = {1, 2, 34, 45, 6, 23, 1, 5, 13};  // 9位
         int target = 47;
 
         // if nums[0] + nums[1] == target
@@ -25,8 +26,8 @@ public class arrayDemo14 {
         // 进行相加,符合要求时打印
         for (int slow = 0; slow < nums.length; slow++) {
 
-            for (int fast = slow +1; fast < nums.length; fast++) {
-                if (nums[slow] + nums[fast] == target){
+            for (int fast = slow + 1; fast < nums.length; fast++) {
+                if (nums[slow] + nums[fast] == target) {
                     System.out.println(slow + "," + fast);
                 }
             }
@@ -37,14 +38,14 @@ public class arrayDemo14 {
 
         for (int slow = 0; slow < nums.length; slow++) {
 
-            for (int fast = slow +1; fast < nums.length; fast++) {
-                if (nums[slow] + nums[fast] == target){
+            for (int fast = slow + 1; fast < nums.length; fast++) {
+                if (nums[slow] + nums[fast] == target) {
                     System.out.println(slow + "," + fast);
-                    is_break=true;  //寻到并打印之后设置结束信号
+                    is_break = true;  //寻到并打印之后设置结束信号
                     break;
                 }
             }
-            if(is_break){
+            if (is_break) {
                 break;
             }
         }
