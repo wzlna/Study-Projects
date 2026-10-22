@@ -35,9 +35,8 @@ public class ArrayDemo11_UniqueRandomNumbers {
 
             // 对count进行判断
             if (count==0){
-                arr[i]=num;
-                // 只有生成一个满足要求的随机数 索引才会自增
-                i++;
+                arr[i]=num;  //如果说count等于0，才写进去
+                i++;  // 只有生成一个满足要求的随机数 索引才会自增
             }
 
         }

@@ -7,7 +7,7 @@ package top.wzln.arrayDemo12;
     举例1：
     arr1: 1 3 5 7 9
     arr2: 2 4 6 8 10
-    arr3: 1 2 3 4 5 6 7 8 9 10
+    result: 1 2 3 4 5 6 7 8 9 10
  */
 public class ArrayDemo15_MergeSortedArrays {
     static void main() {
@@ -20,7 +20,7 @@ public class ArrayDemo15_MergeSortedArrays {
         // 定义三个指针
         int cursor1 = 0;
         int cursor2 = 0;
-        int cursor3 = 0;
+        int cursor3 = 0;  //从0开始
 
         // 需要确保cursor1和2不能等于他们的长度(索引从0开始)
         while (cursor1 < arr1.length && cursor2 < arr2.length) {  //使用while,因为cursor3需要定义在外面(都不超的情况跑完之后,cursor3还需要接着使用)
