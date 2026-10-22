@@ -19,7 +19,7 @@ public class MethodDemo2 {
             int num = r.nextInt(1, 101);  //获取到的随机数存到num变量里面
 
             if(onArr(num,arr,i)){
-                continue;
+                continue;  // 存在就重新跑循环(i还没有++)
             }
 
             arr[i] = num;  //不写else的原因:如果随机数在数组里面就直接continue了,这里不会执行
