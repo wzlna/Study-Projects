@@ -8,6 +8,7 @@ import java.util.Random;
 public class MethodDemo2 {
     static void main() {
 
+
         // 1.创建数组和标记变量
         int[] arr = new int[10];
         Random r = new Random();
