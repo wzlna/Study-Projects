@@ -31,20 +31,20 @@ public class MethodTest1 {
             }
         }
 
-        // 使用方法求数组的最大值和最小值
-        int max = max_score(scores);
-        int min = min_score(scores);
+        // 使用方法求数组的最大值和最小值 为了规范 也求总分
+        int max = maxScore(scores);
+        int min = minScore(scores);
         int total = totalScore(scores);
 
 
         // 总分 - 最大值 - 最小值,剩余的分数再求平均数,改平均数为选手最终得分
-        double final_score = (total - max - min) / (scores.length - 2.0);  //需要写2.0 不然int/int是整除 丢精度
-        System.out.print("最终得分:" + final_score);
+        double finalScore = (total - max - min) / (scores.length - 2.0);  //需要写2.0 不然int/int是整除 丢精度
+        System.out.print("最终得分:" + finalScore);
 
     }
 
 
-    static int max_score(int[] score) {
+    static int getMaxScore(int[] score) {
 
         int max = score[0];
         for (int i = 1; i < score.length; i++) {  //直接从1开始 (0已赋值)
@@ -56,7 +56,7 @@ public class MethodTest1 {
         return max;  //循环结束后,将max返回
     }
 
-    static int min_score(int[] score) {
+    static int getMinScore(int[] score) {
 
         int min = score[0];
         for (int i = 1; i < score.length; i++) {  // 0位已赋值给min
@@ -68,9 +68,9 @@ public class MethodTest1 {
         return min;  //循环结束后,将min返回
     }
 
-    static int totalScore(int[] scores){
-        int total = 0;
-        for (int i = 0; i < scores.length; i++) {
+    static int getTotalScore(int[] scores){
+        int total = scores[0];  //不写0 提高通用性
+        for (int i = 1; i < scores.length; i++) {
             total = total + scores[i];
         }
 
