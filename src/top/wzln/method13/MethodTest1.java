@@ -32,9 +32,9 @@ public class MethodTest1 {
         }
 
         // 使用方法求数组的最大值和最小值 为了规范 也求总分
-        int max = maxScore(scores);
-        int min = minScore(scores);
-        int total = totalScore(scores);
+        int max = getMaxScore(scores);
+        int min = getMinScore(scores);
+        int total = getTotalScore(scores);
 
 
         // 总分 - 最大值 - 最小值,剩余的分数再求平均数,改平均数为选手最终得分
