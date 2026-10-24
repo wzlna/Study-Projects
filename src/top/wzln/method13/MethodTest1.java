@@ -44,24 +44,24 @@ public class MethodTest1 {
     }
 
 
-    static int getMaxScore(int[] score) {
+    static int getMaxScore(int[] scores) {
 
-        int max = score[0];
-        for (int i = 1; i < score.length; i++) {  //直接从1开始 (0已赋值)
-            if (score[i] > max) {
-                max = score[i];  //大于就设置新的max
+        int max = scores[0];
+        for (int i = 1; i < scores.length; i++) {  //直接从1开始 (0已赋值)
+            if (scores[i] > max) {
+                max = scores[i];  //大于就设置新的max
             }
         }
 
         return max;  //循环结束后,将max返回
     }
 
-    static int getMinScore(int[] score) {
+    static int getMinScore(int[] scores) {
 
-        int min = score[0];
-        for (int i = 1; i < score.length; i++) {  // 0位已赋值给min
-            if (score[i] < min) {
-                min = score[i];  //有小于的就设置新的min
+        int min = scores[0];
+        for (int i = 1; i < scores.length; i++) {  // 0位已赋值给min
+            if (scores[i] < min) {
+                min = scores[i];  //有小于的就设置新的min
             }
         }
 
