@@ -23,7 +23,7 @@ public class MethodTest2 {
             System.out.print("请输入第" + (i+1) + "名学生的成绩:");
             double score = sc.nextDouble();  // 输入
             if (score > 100 || score < 0){
-                System.out.println("成绩无效,请重新输入!");  // 仅提示,i没有++,循环末尾不需要continue
+                System.out.println("成绩无效,请重新输入!");  // 仅提示,i没有++,这是循环末尾不需要continue
             } else {
                 scores[i] = score;  //输入合法的时候: 存入 并i++
                 i++;
