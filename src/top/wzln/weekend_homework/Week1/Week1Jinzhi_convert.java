@@ -57,6 +57,7 @@ public class Week1Jinzhi_convert {
         return Integer.parseInt(bin,2);  //Integer.parseInt接收的是一个String,所以输入要是String
     }
 
+
     // 八进制转十进制
     public static int octToDec(String oct){
         return Integer.parseInt(oct,8);
