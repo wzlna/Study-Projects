@@ -1,11 +1,11 @@
+./codebuddy
+basic-code.iml
+
 ### IntelliJ IDEA ###
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 .kotlin
-
-./codebuddy
-basic-code.iml
 
 ### Eclipse ###
 .apt_generated
@@ -31,3 +31,33 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+env/
+build/
+dist/
+*.log
+
+# pyenv
+.python-version
+
+# dotenv
+.env
+
+# virtualenv
+.venv/
+venv/
+ENV/
+
+# IDEA files
+.idea
+
+# Sublime Text settings
+*.sublime-workspace
+*.sublime-project
