@@ -11,18 +11,30 @@ package top.wzln.test15;
 
     思路:
     慢指针: 存入的位置
-    快指针: 找数组2
+    快指针: 找数字；2
     是2 -> 舍弃快指针位置的数据
     不是2 -> 快指针的数据存入慢指针位置
  */
 public class Test1 {
     static void main() {
 
-        int[] nums = {3,2,2,3};
-        int val = 3;
-        int slow = 0;
+        int[] nums = {3,2,2,3,1,32,5,67,32,6,2,3,2};
+        int val = 2;  //表示要删除的数据
+        int slow = 0;  // 代表现在数值应插入的位置，也代表当前有效数据的长度
         int fast = 0;
 
+        while (fast < nums.length) {
+            if (nums[fast] != val){   //不是val的情况
+                nums[slow] = nums[fast];  //快指针的数据存入慢指针位置
+                slow++;
+            }
+            fast++;
+        }
+
+        for (int i = 0; i < slow; i++) {
+            System.out.println(nums[i]);
+        }
+        System.out.println("剩余的元素个数：" + slow);
 
     }
 }
