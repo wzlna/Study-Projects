@@ -17,38 +17,31 @@ import java.util.Scanner;
  */
 public class Test2 {
     static void main() {
-        // 1.定义变量表示红包的总额
-        int money = 20000; //分
+        // 定义变量表示红包的总额
+        int totalMoney = 4; //单位:分
+        // 定义变量表示红包的数量
+        int count = 4;
 
-        // 2.定义变量表示红包的个数
-        int count = 5;
+        // 判断红包够不够发
+        if (totalMoney >= count) {
 
-        // 判断红包的金额要足够
-        if (money < count) {
-            System.out.println("红包的金额不够 请充值");
-        } else {
-
-            // 3.利用循环抽取红包
+            // 创建一个循环 用来产生随机数,最后一位拿剩余的总额不需要进入循环
+            //                              1 2 3 4 (对应第几位)
+            //                              4 3 2 1 (对应到这位的时候 至少要预留多少分)
+            //                              count - i
             Random r = new Random();
-            // 抽取次数应该是count-1,因为最后一个人不随机,拿的是剩余的总额
-            for (int i = 1; i <= count - 1; i++) {
-                //利用Random进行随机抽取  1 2 3 4 表示当前是第几个人抽取
-                //                     4 3 2 1 表示最少预留的钱,单位分
-                //                     money - (count - i)
-                int myMoney = r.nextInt(1, money - (count - i) + 1);  //不加一就取不到
-
-                //从总额中减去当前抽到的钱
-                money = money - myMoney;
-
-                System.out.println("第" + i + "个人 抢到了" + myMoney + "分");
-
+            for (int i = 1; i <= count-1; i++) {  //减1的原因:最后一位不参与循环
+                int bonus = r.nextInt(totalMoney - (count - i))+1;  //加1的原因: [0,totalMoney - count - i),bound取不到
+                totalMoney = totalMoney - bonus;
+                System.out.println("第" + i +"位抽到了" + bonus /100.0 + "元" + ",还剩"+ totalMoney / 100.0 + "元");
             }
 
-            // 输出最后一个人抢到的钱
-            System.out.println("最后一个人抢到了" + money + "分");
+            // 循环结束后 剩下的钱就是最后一位的钱
+            System.out.println("最后1位抽到了" + totalMoney / 100.0 + "元");
 
+        } else {
+            System.out.println("当前余额" + totalMoney + "不够发送" + count + "个红包,请充值!");
         }
-
     }
 
 }
