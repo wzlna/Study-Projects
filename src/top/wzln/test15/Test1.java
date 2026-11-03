@@ -26,13 +26,13 @@ public class Test1 {
         while (fast < nums.length) {
             if (nums[fast] != val){   //不是val的情况
                 nums[slow] = nums[fast];  //快指针的数据存入慢指针位置
-                slow++;
+                slow++;  //存入之后 慢指针走一步
             }
             fast++;
         }
 
         for (int i = 0; i < slow; i++) {
-            System.out.println(nums[i]);
+            System.out.print(nums[i] + " ");
         }
         System.out.println("剩余的元素个数：" + slow);
 
