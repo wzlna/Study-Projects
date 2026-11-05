@@ -8,9 +8,9 @@ public class JiSuanQi {
     // 属性 F
     public int result;
 
-    // 无参构造器 C
+    // 无参构造器 默认可以不写 C
     public JiSuanQi() {
-        System.out.println("请输入一个数字");
+        System.out.println("欢迎使用计算系统");
     }
 
 //    计算器程序不建议使用有参构造器的方式传值
