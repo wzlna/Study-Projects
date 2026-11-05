@@ -1,4 +1,4 @@
-package com.rj.bd.study;
+package com.rj.bd.test0909.study;
 
 /**
  * @desc 测试类, 用来测试Yuan这个类

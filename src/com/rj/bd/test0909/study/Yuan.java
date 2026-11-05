@@ -1,4 +1,4 @@
-package com.rj.bd.study;
+package com.rj.bd.test0909.study;
 
 /**
  * @desc 自定义的类,叫做Yuan类
