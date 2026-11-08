@@ -17,7 +17,7 @@ public class Yuan {  // 类:FCM
 
     public Yuan(double r) {
         System.out.println("Yuan类的有参构造器被调用了");
-        banJing = r;
+        this.banJing = r;  // this 指代当前正在被创建的那个对象本身
         System.out.println("半径为" + banJing + "的圆被创建了");
     }
 
