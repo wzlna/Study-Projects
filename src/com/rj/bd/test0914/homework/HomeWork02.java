@@ -21,8 +21,27 @@ public class HomeWork02 {
 
         // 3.使用方法拆解字符串到 char数组里
         char [] arr = input.toCharArray();
+        
+        // 4.取出 char 数组里的每个元素进行判断
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
+            if (arr[i] >='0' && arr[i] <= '9'){  //字符类型比较ASCII码
+                nums++;
+            }
+            else if (arr[i] >= 'A' && arr[i] <= 'Z' || arr[i] >= 'a' && arr[i] <= 'z'){  //字符类型比较ASCII码
+                words++;
+            }
+            else if (arr[i] == ' '){  // 空格
+                spaces++;
+            }
+            else {  // 其他字符
+                otherChar++;
+            }
         }
+
+        System.out.println("英文字母个数为：" + words);
+        System.out.println("空格个数为：" + spaces);
+        System.out.println("数字个数为：" + nums);
+        System.out.println("其他字符个数为：" + otherChar);
     }
 }
