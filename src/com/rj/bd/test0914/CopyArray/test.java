@@ -45,8 +45,7 @@ public class test {
 
         // 方式4:使用clone()方法
         //从源码来看也是native方法,但返回为Object类型,所以复制时将发生强转,所以效率不如System.arraycopy()方法
-        int[] arr5 = new int[arr1.length];
-        arr5 = arr1.clone();  //clone()方法是Object类中的方法
+        int[] arr5 = new int[arr1.length];arr5 = arr1.clone();  //clone()方法是Object类中的方法
         //遍历打印
         for (int i = 0; i < arr5.length; i++) {
             System.out.print(arr5[i] + "\t");
