@@ -9,6 +9,7 @@ public class Test {
         // Student 是引用数据类型，stu01变量 和 stu02变量 保存的是 Student 对象的引用
         Student stu01 = new Student("一号学生", 18);
         Student stu02 = new Student("二号学生", 29);
+//        int stu03 = new Student("二号学生", 29);
 
 //        System.out.println(stu01);
 //        System.out.println(stu02);
