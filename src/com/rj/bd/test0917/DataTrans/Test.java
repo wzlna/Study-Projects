@@ -18,7 +18,7 @@ public class Test {
         String intToStr = a + "";
         System.out.println(intToStr + "998");
 
-        //2.字符串与日期之间互转
+        // 2.字符串与日期之间互转
         Date date = new Date();
         System.out.println(date);
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy年-MM月-dd日 HH:mm:ss");
